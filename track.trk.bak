@@ -1,0 +1,22 @@
+# basic sweep example
+
+# global azimuth of 45 degrees everywhere - as a starting base for further modifications.
+azimuth 45
+# global twist 360 degrees - i.e., a linearly increasing azimuth, starting at 0 degrees and ending at 360 degrees.
+twist -60
+texture "craptexture.PNG" 20 1
+bump "crapbumpmap.PNG"
+# a simple cross section
+p -3 1
+p 3 1
+p 3 -1
+p -3 -1
+
+
+# a simple knotted loop (trefoil knot).
+v    10.0 -2.0 4.0
+v    -6.732 7.66 -4.0
+v    -6.732 -7.66 4.0
+v    10.0 2.0 -4.0
+v    -3.268  9.66 4.0
+v    -3.268  -9.66 -4.0
